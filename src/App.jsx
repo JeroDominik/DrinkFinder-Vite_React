@@ -1,20 +1,19 @@
 import { Container } from 'react-bootstrap'
-import { useState } from 'react'
+import Formulario from './components/Formulario'
+import { CategoriasProvider } from './context/CategoriasProvider'
 
 function App() {
 
   return (
-    <>
+    <CategoriasProvider>
       <header className='py-5'>
         <h1>Buscador de Tragos</h1>
       </header>
 
       <Container className='mt-5'>
-        <form action="">
-          Aqui va el Form
-        </form>
+        <Formulario/>
       </Container>
-    </>
+    </CategoriasProvider>
 
   )
 }
