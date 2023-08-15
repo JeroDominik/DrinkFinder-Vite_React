@@ -10,7 +10,7 @@ export default function Formulario() {
     })
     const [ alerta, setAlerta ] = useState('')
 
-    const { categorias } = useCategorias()
+    const { categorias, consultarTragos } = useCategorias()
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -20,6 +20,7 @@ export default function Formulario() {
             return
         }
         setAlerta('')
+        consultarTragos(busqueda)
     }
 
   return (

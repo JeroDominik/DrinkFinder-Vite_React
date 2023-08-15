@@ -1,5 +1,7 @@
 import { Container } from 'react-bootstrap'
 import Formulario from './components/Formulario'
+import ListadoTragos from './components/ListadoTragos'
+import ModalTrago from './components/ModalTrago'
 import { CategoriasProvider } from './context/CategoriasProvider'
 
 function App() {
@@ -12,6 +14,9 @@ function App() {
 
       <Container className='mt-5'>
         <Formulario/>
+
+        <ListadoTragos/>
+        <ModalTrago></ModalTrago>
       </Container>
     </CategoriasProvider>
 
